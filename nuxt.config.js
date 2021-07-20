@@ -2,7 +2,6 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
   head: {
-    title: 'druxt-empty',
     htmlAttrs: {
       lang: 'en'
     },
@@ -34,7 +33,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'druxt-site'
+    'druxt-site',
+    'nuxt-buefy'
   ],
 
   // druxt: {
@@ -42,24 +42,24 @@ export default {
   // },
 
   druxt: {
-    baseUrl: 'http://druxtsite/',
-    // blocks: {
-    //   query: { fields: [] },
-    // },
-    // entity: {
-    //   components: { fields: false },
-    //   query: { schema: true },
-    // },
-    // menu: {
-    //   query: { requiredOnly: true },
-    // },
-    // views: {
-    //   query: { bundleFilter: true },
-    // },
+    baseUrl: 'http://drupalproject/',
+    blocks: {
+      query: { fields: [] },
+    },
+    entity: {
+      components: { fields: false },
+      query: { schema: true },
+    },
+    menu: {
+      query: { requiredOnly: true },
+    },
+    views: {
+      query: { bundleFilter: true },
+    },
   },
 
   // proxy: [ 
-  //   'http://druxtsite/sites/default/files'
+  //   'http://drupalproject/sites/default/files'
   // ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
